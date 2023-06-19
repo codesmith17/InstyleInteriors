@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=BioRhyme&family=Cedarville+Cursive&family=Concert+One&family=Eczar&family=IBM+Plex+Mono:ital@1&family=Lato:ital,wght@1,700&family=Lobster&family=Prompt:ital,wght@1,100;1,300&family=Roboto&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+
+    <style lang="scss">
+        @import url(style.scss);
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=BioRhyme&family=Cedarville+Cursive&family=Concert+One&family=Eczar&family=IBM+Plex+Mono:ital@1&family=Lato:ital,wght@1,700&family=Prompt:ital,wght@1,100;1,300&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+
+    <!-- <link rel="SHORTCUT ICON" href="https://www.microsoft.com/favicon.ico?v2" type="image/x-icon" /> -->
+    <title>Instyle Interiors- Design Your home in your budget</title>
+
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div
+            class="navbar lg:text-3xl sticky top-0  z-[1000] flex justify-between items-center h-28 text-white bg-yellow-500">
+            <div class="flex justify-center items-center lg:order-2">
+                <div class="hamburger z-50 inline-block p-4 cursor-pointer lg:hidden " id="hamburger">
+                    <!-- <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div> -->
+                    <!-- <button class="hamburger__toggle">
+                        <span class="hamburger__icon"></span>
+                    </button> -->
+                    <button class="hamburger w-8" onclick="hamburgerCross()"><img id="hamburgers"
+                            src="assets/hamburger.png" alt="" srcset=""></button>
+
+
+                </div>
+
+                <!-- <div class="search lg:hidden mr-6 w-4"><img src="assets/search.svg" alt=""></div> -->
+
+            </div>
+
+            <div class="logo text-center flex lg:order-1">
+                <div class="p-4 flex justify-center mx-auto"><a href="#home"><img title="Our Logo"
+                            class=" h-[5rem] object-cover z-50 items-center" src="assets/My project-1.png"
+                            id="logoimg"></a>
+                </div>
+                <div class="features text-left mx-auto absolute lg:ml-5 lg:text-xl  lg:static lg:w-auto bg:[#424242] lg:bg:[#424242] inset-0 lg:flex lg:mx-4 lg:space-x-6 -translate-x-[700px] lg:translate-x-0 lg:items-center"
+                    id="features">
+                    <div id="fitem1" class="lg:mx-auto w-fit text-[18px]">
+                        <div
+                            class="fitem1 bg-[#2c2c2c] text-gray-400  hover:text-white transition-all duration-300 border-dotted px-8 mt-28 pt-10 cursor-pointer lg:hidden lg:-translate-x-[1700px] z-[1000]">
+                            <a href="#home">
+                                Home</a>
+                        </div>
+                        <div
+                            class="fitem1 bg-[#2c2c2c] text-gray-400 hover:text-white transition-all duration-300 border-dotted px-8 pt-10  cursor-pointer lg:hidden lg:-translate-x-[1700px] z-[1000]">
+                            <a href="#items">Items</a>
+                        </div>
+                        <div
+                            class="fitem1 bg-[#2c2c2c] text-gray-400 hover:text-white transition-all duration-300 border-dotted px-8 pt-10  cursor-pointer lg:hidden lg:-translate-x-[1700px] z-[1000]">
+                            <a href="#about"> About Us </a>
+                        </div>
+                        <div
+                            class="fitem1 bg-[#2c2c2c] text-gray-400 hover:text-white transition-all duration-300 border-dotted px-8 pt-10 cursor-pointer lg:hidden lg:-translate-x-[1700px] z-[1000]">
+                            <a href="#budget"> Budget </a>
+                        </div>
+                        <div
+                            class="fitem1 bg-[#2c2c2c] text-gray-400 hover:text-white transition-all duration-300 border-dotted px-8 pt-10 cursor-pointer pb-10 lg:hidden lg:-translate-x-[1700px] z-[1000]">
+                            <a href="#contact"> Contacts </a>
+                        </div>
+                        <div
+                            class="fitem1 bg-[#2c2c2c] transition-all duration-300 items-center justify-center cursor-pointer pb-10 lg:hidden lg:-translate-x-[1700px] z-[1000]">
+                            <img class="w-3/6 items-center justify-center mx-auto" src="assets/hamburgerlogo.png"
+                                alt="">
+                        </div>
+                        <div
+                            class="fitem1 bg-[#2c2c2c] transition-all duration-300 items-center justify-center cursor-pointer pb-10 lg:hidden lg:-translate-x-[1700px] z-[1000]">
+                            <p class="hemlo text-2xl w-fit mx-auto">Instyle Interiors</p>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="fitem h-fit rounded-sm hover-underline-animation w-32 text-center  border-dotted mt-20 pt-4 lg:my-0  cursor-pointer lg:p-0   mx-auto px-8 lg:px-4 lg:hover:underline lg:hover:rounded-2xl transition-all duration-700">
+                        <a href="#home">
+                            Home</a>
+                    </div>
+
+
+
+
+                    <div
+                        class="fitem hover-underline-animation h-fit rounded-sm text-center w-32 lg:border-none  pt-4 lg:my-0 lg:p-0  cursor-pointer bg:[#424242] px-8 lg:px-4 lg:hover:underline lg:duration-500 lg:hover:rounded-2xl">
+                        <a href="#items">Items</a>
+                    </div>
+
+                    <div
+                        class="fitem hover-underline-animation h-fit rounded-sm text-center w-32 lg:border-none  pt-4 lg:my-0 lg:p-0  cursor-pointer bg:[#424242] px-8 lg:px-4 lg:hover:underline lg:duration-500 lg:hover:rounded-2xl">
+                        <a href="#about"> About Us </a>
+                    </div>
+
+                    <div
+                        class="fitem hover-underline-animation h-fit rounded-sm text-center w-32 lg:border-none  pt-4 lg:my-0 lg:p-0  cursor-pointer bg:[#424242] px-8 lg:px-4 lg:hover:underline lg:duration-500 lg:hover:rounded-2xl">
+                        <a href="#budget"> Budget </a>
+                    </div>
+
+                    <div
+                        class="fitem hover-underline-animation h-fit rounded-sm text-center w-32 lg:border-none  pt-4 lg:my-0 lg:p-0  cursor-pointer bg:[#424242] px-8 lg:px-4 lg:hover:underline lg:duration-500 lg:hover:rounded-2xl">
+                        <a href="#contact"> Contacts </a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="cart text-center lg:order-3 flex ">
+                <!-- <div class="cursor-pointer dropdown" id="kebab">
+                    <button class="dropbtn" for="btnControl"> <img class="mr-6 my-3  w-8 lg:hidden z-50"
+                            src="assets/kebab2.png" alt="" srcset=""></button>
+                    <div class="dropdown-content-org">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+
+                </div> -->
+                <!-- <div class="dropdown lg:hidden">
+                    <button class="dropbtn" for="btnControl"><img class="mr-6 my-3 w-8 lg:hidden z-50"
+                            src="assets/kebab2.png" alt="" srcset=""></button>
+                    <div class="dropdown-content-org">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                
+                 -->
+
+
+
+                <div class="search dropdown-content hidden mt-2 lg:inline mr-4"> <span class="px-4"><a
+                            class="hover:underline hover-fx1 " title="+91 8668522877"
+                            href="https://wa.me/+918668522877" target="_blank"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+                    <span class="px-4" id="movement"><a class="hover:underline hover-fx2"
+                            href="mailto:mantri.interior@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a></span>
+                </div>
+                
+                <div class="box">
+                    <!-- <form name="search">
+                        <input type="text" class="input lg:w-7 lg:mr-2  z-50" name="txt"
+                            onmouseout="this.value = ''; this.blur();">
+
+                    </form>
+                    <i class="fa fa-search fa-3x" aria-hidden="true"></i> -->
+                    <!-- <form role="search" method="get" class="search-form" action="">
+                        <label>
+
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s"
+                                title="Search for:" />
+                        </label>
+                        <input type="submit" id="myInput" class="search-submit" value="Search" onkeyup="searchPage()" />
+                    </form> -->
+
+                </div>
+
+                <!-- <img class="w-6 mr-4 z-50" src="assets/search.svg" onClick="find();" alt=""> -->
+            </div>
+        </div>
+        <div class="slides reveal" id="home">
+            <div class="sliderss flex flex-col-reverse lg:flex-row bg-[#d8d6bf] " id="slide-1">
+                <div class="left flex flex-col justify-center lg:my-10 my-9 items-center lg:items-baseline py-12">
+                    <h3 class="text-[#950c17] lg:pl-4">New</h3>
+                    <h1 class="text-2xl lg:text-4xl font-medium lg:ml-32" id="leftmove">
+                        Instyle Interiors
+                    </h1>
+                    <p class="lg:w-2/4 typing text-sm lg:text-xl mx-5 my-5 text-left lg:text-left" id="rightmove">
+                        Instyle Interiors
+                        established
+                        in 2010.
+                        Instyle Interiors is pioneer in interior designing,project execution, project management in
+                        commercial and residential sector. Instyle Interior headed by Revati Mantri with a strong
+                        management team such as false ceiling,electricians,carpenters and painters.</p>
+                    <!-- <button
+                        class="text-white bg-black px-4 py-2 font-bold my-6 mx-5 hover:text-black hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500">Learn
+                        More</button> -->
+                </div>
+                <div class="right mx-[20px] brighten flex flex-row">
+
+                    <div class="img-slider mx-2 my-2">
+                        <div class="slide active">
+                            <img class="w-[37rem] rounded-lg lg:w-[120rem] lg:my-10 mt-10 mx-auto" src="assets/2no.png"
+                                alt="">
+
+                        </div>
+                        <div class="slide nacho">
+                            <img class="w-[37rem] rounded-lg lg:w-[200rem] lg:my-10 mt-10 mx-auto"
+                                src="assets/1hello.png" alt="">
+
+                        </div>
+                        <div class="slide">
+                            <img class="w-[37rem] rounded-lg lg:w-[50rem] lg:my-10 mt-10 mx-auto"
+                                src="assets/1hemlo.png" alt="">
+
+                        </div>
+                        <div class="slide">
+                            <img class="w-[37rem] rounded-lg lg:w-[100rem] lg:my-10 mt-10 mx-auto" src="assets/3no.png"
+                                alt="">
+
+                        </div>
+                        <div class="slide">
+                            <img class="w-[37rem] rounded-lg lg:w-fit lg:my-10 mt-10 mx-auto" src="assets/2hemlo.png"
+                                alt="">
+
+                        </div>
+                        <div class="navigation">
+                            <div class="btn active"></div>
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="relative">
+
+                        <img class="w-[37rem] rounded-lg lg:w-[120rem] lg:my-10 mt-10 mx-auto" src="assets/2no.png"
+                            alt="">
+                    </div> -->
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="promo reveal space-y-6 flex flex-row flex-wrap justify-evenly  lg:flex-row lg:justify-center "
+                id="items">
+                <div class="item flex lg:flex-col items-center  flex-row  mx-4 mt-6 space-x-2">
+                    <img class="w-44 bigpeople" src="assets/ic1.png" alt="">
+                    <span class="font-medium w-[8rem] text-center  text-sm my-4 lg:mt-12">Style Your House</span>
+                </div>
+                <div class="item flex lg:flex-col items-center mx-4 space-x-2">
+                    <img class="w-56 h-44 bigpeople" src="assets/ic3 (1).png" alt="">
+                    <span class="font-medium lg:w-[8rem] w-fit ml-[-20rem]  text-center text-sm my-4">Explore surface
+                        devices</span>
+                </div>
+                <div class="item lg:flex-col flex items-center mx-4 space-x-2">
+                    <img class="w-44 bigpeople" src="assets/ic4.png" alt="">
+
+                    <span class="font-medium w-[8rem] text-center text-sm my-4">Buy Xbox Games</span>
+                </div>
+                <div class="item lg:flex-col flex items-center mx-4 space-x-2">
+                    <img src="assets/ic1.png" class="w-44 bigpeople" alt="">
+                    <span class="font-medium w-[8rem] text-center text-sm my-4 lg:mt-12">Get Windows 11</span>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="products space-y-6 flex flex-row flex-wrap bg justify-evenly bg-[#eec95b] lg:flex-row borders lg:justify-center mb-4"
+                id="works">
+                <div
+                    class="marginbottom item flex items-center  flex-col  mx-4 mt-6 mb-0  space-x-2 bg-white rounded-lg">
+                    <img class="lg:w-72 w-64  lg:h-56  m-5 bigpeople rounded-lg border-slate-900 border-4 lg:border-0"
+                        src="assets/pro1.png" alt="">
+                    <!-- <h1 class="text-3xl font-bold lg:mt-12">Surface Laptop 5</h1>
+                <p class="font-normal w-64 text-left text-sm lg:text-xl my-4">Sophisticated style and multitasking speed
+                    powered by 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform make this
+                    the perfect gift</p> -->
+                </div>
+                <div
+                    class="marginbottom item flex items-center  flex-col  mx-4 mt-6 mb-0  space-x-2 bg-white rounded-lg">
+                    <img class="lg:w-72 w-64  lg:h-56  m-5 bigpeople rounded-lg border-slate-900 border-4  lg:border-0"
+                        src="assets/pro2.png" alt="">
+                    <!-- <h1 class="text-3xl font-bold lg:mt-12">Surface Laptop 5</h1>
+                <p class="font-normal w-64 text-left text-sm lg:text-xl my-4">Sophisticated style and multitasking speed
+                    powered by 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform make this
+                    the perfect gift</p> -->
+                </div>
+                <div
+                    class="marginbottom item flex items-center  flex-col  mx-4 my-6 mb-10 space-x-2 bg-white rounded-lg">
+                    <img class="lg:w-72 w-64 h-48  lg:h-56 m-5 bigpeople rounded-lg border-slate-900 border-4  lg:border-0"
+                        src="assets/pro3.png" alt="">
+                    <!-- <h1 class="text-3xl font-bold lg:mt-12">Surface Laptop 5</h1>
+                <p class="font-normal w-64 text-left text-sm lg:text-xl my-4">Sophisticated style and multitasking speed
+                    powered by 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform make this
+                    the perfect gift</p> -->
+                </div>
+
+                <div class=" marginbottom item flex items-center  flex-col  mx-4 my-6 space-x-2 bg-white rounded-lg ">
+                    <img class="lg:w-72 w-64 h-48 lg:h-56 bigpeople rounded-lg border-slate-900 border-4  lg:border-0  m-5"
+                        src="assets/pro4.png" alt="">
+
+                    <!-- <h1 class="text-3xl font-bold lg:mt-12">Surface Laptop 5</h1>
+                <p class="font-normal w-64 text-left text-sm lg:text-xl my-4">Sophisticated style and multitasking speed
+                    powered by 12th Gen Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform make this
+                    the perfect gift</p> -->
+                </div>
+            </div>
+
+            <div class="aboutus z-[10] " id="about">
+                <div class="aboutusbhai flex flex-col lg:flex-row bg-[#f2f2f2] ">
+
+                    <div class="left  flex flex-col  items-center lg:items-baseline py-12">
+                        <div>
+                            <h1 class="text-4xl mx-9 mt-0 mb-4">Why Choose Us</h1>
+                            <p class="font-light text-xl w-3/4 mx-9 mb-8">Besides great interior design, there are lots
+                                of
+                                reasons
+                                to
+                                choose Interia. Here are some of the
+                                most popular ones.</p>
+                        </div>
+
+
+
+                        <div class="pehla flex-col" id="leftmove1">
+                            <div class="flex flex-row my-4">
+                                <img class="w-36 h-36 ml-9" src="assets/logoteam1.png" alt="">
+                                <div>
+                                    <h1
+                                        class="text-2xl w-3/4  lg:text-3xl mx-auto text-center lg:text-left font-medium ">
+                                        Professional Team </h1>
+
+
+                                    <p
+                                        class="w-3/4 lg:text-xl text-base text-left typing mx-auto font-light lg:text-left py-6">
+                                        Our
+                                        team
+                                        includes only the best decorators and interior designers in the industry.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="dusra flex-col my-4" id="leftmove2">
+                            <div class="flex flex-row">
+                                <img class="w-36 h-36 ml-9" src="assets/logoidea.png" alt="">
+                                <div>
+                                    <h1
+                                        class="text-2xl w-3/4  lg:text-3xl mx-auto text-center lg:text-left font-medium ">
+                                        Unusual Ideas </h1>
+
+
+                                    <p
+                                        class="w-3/4 lg:text-xl text-base text-left typing mx-auto font-light lg:text-left py-6">
+                                        Our
+                                        designers
+                                        generate various yet always original ideas that will surely fit your needs.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="teesra flex-col my-4" id="leftmove3">
+                            <div class="flex flex-row">
+                                <img class="w-36 h-36 ml-9" src="assets/logorespect.png" alt="">
+                                <div>
+                                    <h1
+                                        class="text-2xl w-3/4  lg:text-3xl mx-auto text-center lg:text-left font-medium">
+                                        Made with Respect </h1>
+
+
+                                    <p
+                                        class="w-3/4 lg:text-xl text-base text-left typing mx-auto font-light lg:text-left py-6">
+                                        All our
+                                        work is
+                                        built around respect to our clients, great service, and creativity.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="teesra flex-col my-4" id="leftmove3">
+                            <div class="flex flex-row">
+                                <img class="w-36 h-36 ml-9" src="assets/logo4.png" alt="">
+                                <div>
+                                    <h1
+                                        class="text-2xl w-3/4  lg:text-3xl mx-auto text-center lg:text-left font-medium">
+                                        Budget Friendly </h1>
+
+
+                                    <p
+                                        class="w-3/4 lg:text-xl text-base text-left typing mx-auto font-light lg:text-left py-6">
+                                        We accomplish our work, in your suitable budget, by using your hard earned money
+                                        reasonably.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="teesra flex-col my-4" id="leftmove3">
+                            <div class="flex flex-row">
+                                <img class="w-36 h-36 ml-9" src="assets/logo5.png" alt="">
+                                <div>
+                                    <h1
+                                        class="text-2xl w-3/4  lg:text-3xl mx-auto text-center lg:text-left font-medium">
+                                        Our Mission </h1>
+
+
+                                    <p
+                                        class="w-3/4 lg:text-xl text-base text-left typing mx-auto font-light lg:text-left py-6">
+                                        Our mission is to modernize and enhance your house and lifestyle.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div>
+                            <a href="tel:8668522877" target="_blank">
+                                <button
+                                    class="text-white w-64 bg-black px-4 py-5 font-bold mt-10 ml-9 lg:ml-16 rounded-xl hover:text-black hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500"
+                                    onclick="refreshPae()" id="consult">Consult
+                                    Now </button></a>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="rights z-0">
+                        <div class="flex flex-row ">
+                            <div class="ml-3 fadein">
+                                <img class=" mt-20   w-[150px] lg:w-[200px] rounded-xl " src="assets/2oks.png"
+                                    alt="about1 img" id="rightmove">
+                                <img src="assets/3oks.png" class=" mt-5 w-[200px] lg:w-[260px] rounded-xl"
+                                    id="rightmove" alt="">
+                                <img src="assets/3hemlo.jpeg" class=" mt-5 w-[200px] lg:w-[260px] rounded-xl"
+                                    id="rightmove" alt="">
+                                <img src="assets/5hemlo.png" class=" mt-5 w-[200px] lg:w-[260px] rounded-xl"
+                                    id="rightmove" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/woman.jpeg"
+                                    class="rounded-xl mx-7 mt-14 w-4/5 lg:ml-7 lg:mr-0 overflow-hidden" id="rightmove1"
+                                    alt="females">
+                                <div id="talkbubble" class="hover:shadow-2xl mt-[-50px] ml-3 bigpeople">
+                                    <h4 class="text-lg font-bold text-white   pt-5 pl-5 pr-5 ">Revati Mantri</h4>
+                                    <p class="text-white font-light  pt-2 px-4 pb-48">Founder of “Instyle Interiors”</p>
+
+                                </div>
+                                <img src="assets/4hemlo.jpeg"
+                                    class="rounded-xl mx-7 mt-14 w-4/5 lg:ml-7 lg:mr-0 overflow-hidden" id="rightmove1"
+                                    alt="females">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="budget bg-[#363333] mt-8" id="budget">
+                <h1 class="lg:text-5xl text-3xl pt-12  text-white lg:w-96  font-semibold text-center mx-auto">Design
+                    options
+                    for
+                    your budget
+                </h1>
+
+                <p class="text-center font-bold text-yellow-500 mt-6 mb-4 lg:mt-14 lg:mb-0 lg:text-3xl text-2xl">Choose
+                    your
+                    budget
+                </p>
+
+                <div class="h-screen  hidden lg:flex lg:flex-col justify-center items-center">
+                    <img id="avatar" class="w-5/6 mt-2 bigpeople rounded-xl" src="assets/budget1finalest.png">
+                    <div class="flex gap-56 dabao">
+                        <button onclick="eyesOpen()"
+                            class=" bg-black font-bold mt-32 mx-5 hover:text-black hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500 text-green-100 w-[120%] py-2 px-4 rounded-lg shadow   focus:bg-yellow-400 focus:text-black ">Eyes
+                            Open</button>
+                        <button onclick="eyesClosed()"
+                            class=" bg-black font-bold mt-32 mx-5 hover:text-black hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500 text-green-100 py-2 px-4 w-[120%] rounded-lg shadow   focus:bg-yellow-400 focus:text-black">Eyes&nbsp;
+                            Closed</button>
+                        <button onclick="eyesDancing()"
+                            class=" bg-black font-bold mt-32 mx-5 hover:text-black hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500 text-green-100 py-2 w-[120%] px-4 rounded-lg shadow   focus:bg-yellow-400 focus:text-black">Eyes&nbsp;
+                            Dancing</button>
+                    </div>
+
+                </div>
+
+                <div class="h-screen1  lg:hidden  flex flex-row justify-center items-center">
+                    <div class="flex flex-col mt-7 gap-5 dabao">
+                        <button onclick="eyesOpen1()"
+                            class=" bg-black font-bold my-6 mx-5  hover:text-black w-fit hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500 text-green-100  py-2 px-4 rounded-lg shadow   focus:bg-yellow-400 focus:text-black">Eyes
+                            Open</button>
+                        <button onclick="eyesClosed1()"
+                            class=" bg-black font-bold my-6 mx-5 hover:text-black hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500 text-green-100 py-2 px-4 rounded-lg shadow   focus:bg-yellow-400 focus:text-black">Eyes&nbsp;Closed</button>
+                        <button onclick="eyesDancing1()"
+                            class=" bg-black font-bold my-6 mx-5 hover:text-black hover:bg-yellow-400 hover:shadow-2xl transition-all duration-500 text-green-100 py-2 px-4 rounded-lg shadow   focus:bg-yellow-400 focus:text-black">Eyes
+                            Dancing</button>
+                    </div>
+                    <img id="avatar1" class="w-2/5 ml-7 my-10" src="assets/budget1finalvertical.png">
+
+
+
+
+                </div>
+                <div class="reasons mt-0 mb-8 w-fit mx-auto">
+                    <h3 class="text-2xl lg:text-3xl bg-inherit  text-white w-fit  text-center mx-auto">What influences
+                        the
+                        budget</h3>
+                    <ul
+                        class="text-white font-extralight listtypes items-cente justify-evenly flex flex-row w-10/12 lg:w-7/12 mx-auto mt-10 mb-0 flex-wrap ">
+                        <li class="text-center w-40 mx-auto text-lg my-5">Flooring</li>
+                        <li class="text-center w-40 mx-auto text-lg  my-5">Shipping fees</li>
+                        <li class="text-center w-40 mx-auto text-lg my-5">Labor costs</li>
+                        <li class="text-center w-40 mx-auto text-lg my-5">Decorative accessories</li>
+                        <li class="text-center w-40 mx-auto text-lg my-5">Window treatments</li>
+                        <li class="text-center w-40 mx-auto text-lg my-5">Applicable taxes</li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="contacts items-center mt-0  bg-[rgb(241,241,241,1)]" id="contact">
+                <h2 class="mx-auto w-fit text-center font-bold text-4xl lg:w-[30rem] my-10">Book a free designer
+                    consultation
+                </h2>
+                <p class="text-yellow-400 mx-auto text-center font-semibold text-xl w-fit lg:w-[33rem] my-5">A great way
+                    to
+                    your
+                    new
+                    interior</p>
+                <div class="flex flex-col lg:flex-row my-11 ">
+
+                    <div class="firstdabba flex flex-col mx-auto badahounga">
+                        <img src="assets/message.png" class=" image-dabba w-32  mx-auto rounded-lg" alt="">
+                        <p class="lg:w-72 text-center mx-auto my-5 text-bold">Discuss every aspect of your interior with
+                            one
+                            of
+                            our designers</p>
+                        <p class="w-10 mx-auto bg-yellow-400 h-2 mb-5 rounded-sm  maibhi"></p>
+                    </div>
+                    <div class="seconddabba flex flex-col mx-auto badahounga">
+                        <img src="assets/calculate.jpg" class=" image-dabba w-32 mx-auto rounded-lg" alt="">
+                        <p class="lg:w-72 text-center mx-auto my-5 text-bold">Let us plan and calculate every part of
+                            your
+                            new
+                            interior</p>
+                        <p class="w-10 mx-auto bg-yellow-400 h-2 mb-5 rounded-sm  maibhi"></p>
+                    </div>
+                    <div class="thirddabba flex flex-col mx-auto badahounga">
+                        <img src="assets/star.jpg" class=" image-dabba w-32 mx-auto rounded-lg" alt="">
+                        <p class="lg:w-72 text-center mx-auto my-5 text-bold">You can also ask questions and suggest any
+                            project
+                            changes</p>
+                        <p class="w-10 mx-auto bg-yellow-400 h-2 mb-5 rounded-sm maibhi "></p>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="flex lg:flex-row flex-col my-8">
+                    <div>
+                        <div class="mapouter lg:w-[90%] w-[80%] ml-11  h-fit rounded-lg mt-10 mb-10 mr-11">
+
+                            <div class="gmap_canvas rounded-lg  border-4  border-amber-400 "><iframe class="gmap_iframe"
+                                    width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=563&amp;height=351&amp;hl=en&amp;q=Instyle Interiors,Khatri Park, Desai Estate, Baramati, Maharashtra 413102&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                    href="https://www.gachacute.com/">www.gachacute.com</a></div>
+                        </div>
+                        <div
+                            class="lg:order-2 text-left lg:w-[70%] w-[80%] justify-center items-center h-fit ml-11 my-4 py-5">
+                            <h2
+                                class="text-left heading text-2xl font-semibold bg-[#eab308] w-fit p-2 rounded-lg underline">
+                                Address:</h2>
+                            <p class="address lg:text-3xl text-3xl w-[100%] text-lg">Instyle Interiors,Khatri Park,
+                                Desai
+                                Estate,
+                                Baramati, Maharashtra, 413102, India
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-center lg:w-[40%] w-[90%] mx-auto lg:mr-11 mt-21 ">
+
+                        <div
+                            class="customer-info rounded-lg flex-row    items-center bg-[#6b6969] w-[100%] justify-center mx-auto box-shadow-3d  z-[1000]">
+
+                            <form method="post" onsubmit="return checkingUserName()" autocomplete="off"
+                                name="contactform" class="flex  flex-col z-[1000]" id="contactform"
+                                action="https://script.google.com/macros/s/AKfycbwhdK3NhoQmox4DpsNOf8DuZb4i2ifpRws_XbtxGdNOFBwVFrXiRBXeEuU5mBoKc7k_/exec">
+                                <input type="text" name="Name"
+                                    class="w-5/6  h-12 p-7  mx-auto  my-6 rounded-lg form-control " placeholder="Name"
+                                    id="enterName">
+                                <input type="email" name="Email"
+                                    class="w-5/6  h-12 p-7 my-6 mx-auto  rounded-lg form-control" placeholder="E-mail"
+                                    id="enterEmail">
+                                <input type="tel" name="Phone"
+                                    class="w-5/6  h-12 p-7 my-6 mx-auto  rounded-lg form-control"
+                                    placeholder="Phone Number" id="enterEmail">
+                                <button type="submit"
+                                    class="text-black bg-yellow-400 w-2/6  h-12 items-center font-bold  mx-auto  my-6 rounded-lg hover:text-white hover:bg-gray-700 hover:shadow-2xl transition-all duration-500"
+                                    onClick="showMessage()" id="insert">Submit</button>
+                                <div class="items-center">
+                                    <p class="text-[#3b3b3b] text-xl w-fit  font-bold mx-auto mt-5">OR CALL US NOW</p>
+                                    <p class="text-white text-2xl hover:text-yellow-500  rounded-lg duration-500 w-52
+                                items-center pl-4 mx-auto mb-6">
+                                        <a href="tel:8668522877" target="_blank">+91 8668522877</a>
+                                    </p>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="footer wrap mt-11  ">
+
+                <a class="hover-fx" href="tel:8668522877" target="_blank"><i class="fa fa-phone"
+                        aria-hidden="true"></i></a>
+                <a class="hover-fx" href="https://goo.gl/maps/nyQWAVNBAfz5EusN6" target="_blank"><i
+                        class="fa fa-map-marker" aria-hidden="true"></i></a>
+                <a class="hover-fx" href="https://www.instagram.com/mantrirevati/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="hover-fx2" href="mailto:mantri.interior@gmail.com" target="_blank"><i
+                        class="fa fa-envelope"></i></a>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+
+                <p class="text-gray-400 w-fit mx-auto">&copy; 2023 Instyle Interiors
+                </p>
+
+
+
+
+            </div>
+
+            <div class="w-fit hidden lg:flex text-xl justify-center items-center mx-auto trykarte my-10 px-16 py-9">
+                <p>Designed by Krishna</p>
+
+            </div>
+
+
+
+
+
+
+
+
+            <a href="#" title="Back To Top"
+                class="BackToTop text-2xl h-60 text-black bg-yellow-400 hover:bg-black hover:text-gray-200 shadow-2xl transition-all duration-500  ">&#11165;</a>
+
+
+
+
+
+
+
+        </div>
+
+        <script type="text/javascript">
+            var slides = document.querySelectorAll('.slide');
+            var btns = document.querySelectorAll('.btn');
+            let currentSlide = 1;
+
+            // Javascript for image slider manual navigation
+            var manualNav = function (manual) {
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
+
+                    btns.forEach((btn) => {
+                        btn.classList.remove('active');
+                    });
+                });
+
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+            }
+
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    manualNav(i);
+                    currentSlide = i;
+                });
+            });
+
+            // Javascript for image slider autoplay navigation
+            var repeat = function (activeClass) {
+                let active = document.getElementsByClassName('active');
+                let i = 1;
+
+                var repeater = () => {
+                    setTimeout(function () {
+                        [...active].forEach((activeSlide) => {
+                            activeSlide.classList.remove('active');
+                        });
+
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+
+                        if (slides.length == i) {
+                            i = 0;
+                        }
+                        if (i >= slides.length) {
+                            return;
+                        }
+                        repeater();
+                    }, 5000);
+                }
+                repeater();
+            }
+            repeat();
+        </script>
+
+        <script>
+            function eyesOpen() {
+                document.getElementById("avatar").src =
+                    "assets/budget1finalest.png";
+
+            }
+
+            function eyesClosed() {
+                document.getElementById("avatar").src =
+                    "assets/budget21finalest.jpg";
+            }
+            function eyesDancing() {
+                document.getElementById("avatar").src =
+                    "assets/budget3finalest.png";
+            }
+            function eyesOpen1() {
+                document.getElementById("avatar1").src =
+                    "assets/budget1finalvertical.png";
+
+            }
+
+            function eyesClosed1() {
+                document.getElementById("avatar1").src =
+                    "assets/budget21finalestvertical.jpg";
+            }
+            function eyesDancing1() {
+                document.getElementById("avatar1").src =
+                    "assets/budget3finalvertical.jpg";
+            }
+
+
+
+            const button = document.getElementById("hamburger");
+            const box = document.getElementById("fitem1");
+
+
+            let button1 = document.getElementById("hamburger");
+            let decision = false;
+
+            button.addEventListener("click", function () {
+                decision = !decision;
+
+            });
+
+
+            button.addEventListener("click", function () {
+                if (decision) {
+                    box.style.transform = "translate(700px, 0)";
+                    box.style.transitionDuration = "0.25s";
+
+                }
+                else {
+                    box.style.transform = "translate(-1700px, 0)";
+                    box.style.transitionDuration = "1s";
+                }
+            });
+
+            $(function () {
+                'use strict';
+                $('i').click(function () {
+                    $(this).next().animate({
+                        width: '250px'
+                    });
+                });
+            });
+
+
+            function hamburgerCross() {
+                if (decision == false) {
+                    document.getElementById("hamburgers").src =
+                        "assets/cross3.png";
+                }
+                if (decision == true) {
+                    document.getElementById("hamburgers").src =
+                        "assets/hamburger.png";
+                }
+            }
+
+
+            const scriptURL = ''
+            const form = document.forms['formName']
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => alert("Thank you! your form is submitted successfully."))
+                    .then(() => { window.location.reload(); })
+                    .catch(error => console.error('Error!', error.message))
+            })
+
+            function checkingUserName() {
+                var username = document.forms["contactform"]["Name"].value;
+                if (username == null || username == "") {
+                    alert("Please enter the Name. Can’t be blank or empty !!!");
+                    return false;
+                }
+                var username = document.forms["contactform"]["Email"].value;
+                if (username == null || username == "") {
+                    alert("Please enter the Email. Can’t be blank or empty !!!");
+                    return false;
+                }
+                var username = document.forms["contactform"]["Phone"].value;
+                if (username == null || username == "") {
+                    alert("Please enter the Phone Number. Can’t be blank or empty !!!");
+                    return false;
+                }
+                var phone = document.forms["contactform"]["Phone"].value;
+                var name = document.forms["contactform"]["Name"].value;
+                var mail = document.forms["contactform"]["Email"].value;
+                if (phone != "" && name != "" && mail != "") {
+                    alert("HEY THERE " + name + "!!! WE WILL CONTACT YOU WITHIN 24 HOURS :)");
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+        <script type="text/javascript">// <![CDATA[
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            }
+            // ]]></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+            type="text/javascript"></script>
+
+
+
+
+
+
+</body>
+
+</html>
